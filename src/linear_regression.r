@@ -15,4 +15,4 @@ pred <- data.frame(Id = test$Id, SalePrice= predict(linearModel, test))
 
 print(sum((test$SalePrice-pred)**2))
 
-write_csv(linearPreds, "output.csv")
+write_csv(pred, "output.csv")
